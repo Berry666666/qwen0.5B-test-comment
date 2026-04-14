@@ -12,7 +12,6 @@ __pycache__/
 
 # Large intermediate artifacts (keep final model and logs)
 data/processed/
-outputs/qwen2.5-0.5b-weibo-senti/checkpoint-*/
 
 # Editor
 .vscode/
