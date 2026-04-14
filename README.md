@@ -102,3 +102,16 @@ curl -X POST http://127.0.0.1:8000/predict \
 - `outputs/qwen2.5-0.5b-weibo-senti/final/`
 - `outputs/qwen2.5-0.5b-weibo-senti/test_metrics.json`
 - `outputs/train.log`
+
+## 9. 可视化调用（稳定方案）
+
+本项目已提供 FastAPI 服务，启动后可直接使用 Swagger 网页进行可视化调试。
+
+浏览器访问：`http://<服务器IP>:8001/docs`
+
+## 10. Ollama 说明
+
+本项目训练产物是序列分类 LoRA 适配器，不能直接等价导入 Ollama 作为聊天模型。
+
+- 若你想在 Ollama 上做近似分类，可参考：`ollama/README_OLLAMA.md`
+- 若你想用你这次训练出来的权重，请使用 API（可视化入口为 `/docs`）。

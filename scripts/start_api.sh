@@ -3,6 +3,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 export PYTHONPATH="$(pwd):${PYTHONPATH:-}"
+export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
 MODEL_DIR="${1:-outputs/qwen2.5-0.5b-weibo-senti/final}"
 PORT="${2:-8000}"
 
