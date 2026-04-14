@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+
+# HF and local caches
+.cache/
+
+# Large intermediate artifacts (keep final model and logs)
+data/processed/
+outputs/qwen2.5-0.5b-weibo-senti/checkpoint-*/
+
+# Editor
+.vscode/
